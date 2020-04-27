@@ -13,3 +13,8 @@ $('.count').each(function () {
 });
 
 }); 
+
+
+function dd() {
+	window.open('DD/index.html');
+}

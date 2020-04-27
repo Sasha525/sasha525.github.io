@@ -10,11 +10,15 @@
 	display: flex;
 	justify-content: center;
 	height: 80px;
-	position: relative;
+	position: fixed;
 	top: 0;
 	z-index: 998;
 	background: white;
 	border-bottom: 1px solid #f5f5f5;
+	opacity: 0.8;
+}
+.header > img, .header > div.menu > a > span{
+	opacity: 1;
 }
 .box{
 	width: 1170px;
@@ -276,9 +280,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: black;
 	font-size: 18pt;
+	 text-shadow: 50px 50px 50px black;
 }
+.work1 > span, .work2 > span, .work3 > span, .work4 > span, .work5 > span, .work6 > span{
+	padding: 10px;
+	background: orange;
+}
+
 .work2{
 	width: 30%;
 	height: 200px;
@@ -287,7 +297,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+		color: black;
 	font-size: 18pt;
 }
 .work3{
@@ -299,7 +309,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: black;
 	font-size: 18pt;
 }
 .work4{
@@ -311,7 +321,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: black;
 	font-size: 18pt;
 }
 .work5{
@@ -323,7 +333,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: black;
 	font-size: 18pt;
 }
 .work6{
@@ -335,7 +345,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: black;
 	font-size: 18pt;
 }
 .content_3{
@@ -445,6 +455,7 @@
 	justify-content: center;
 	align-items: center;
 	background-color: #f5f5f5;
+	flex-direction: column;
 }
 .box7{
 	width: 1170px;
@@ -459,6 +470,7 @@
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	flex-direction: column;
 }
 .box8{
 	width: 1170px;
@@ -466,6 +478,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 }
 .contact_1{
 	display: flex;
@@ -479,6 +492,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 50px;
+
 }
 .input{
 	width: 100%;
@@ -514,4 +528,102 @@
 	justify-content: center;
 	align-items: center;
 	color: white;
+}
+.bgg{
+	background-image: url(bg2.png);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+/*	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    padding: 40px;
+    color: white;
+}
+.work1:hover{
+
+}
+.footer{
+		margin-top: 40px;
+	}
+.contact_1 > span{
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+@media screen and (max-width: 600px){
+	.box1, .box2, .box3, .box4, .box5, .box6, .box7{
+		width: 100%;
+	}
+	.aside{
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+	}
+	.menu{
+		flex-direction: column;
+	}
+	.block_2{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.works_block{
+		flex-direction: column;
+	}
+	.skills{
+		flex-direction: column;
+	}
+	.box{
+		width: 570px;
+	}
+	.box, .header, .menu{
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.menu > a{
+		
+	}
+	.span{
+		width: 80%;
+	}
+	.box8{
+		width: 90%;
+	
+	}
+	.contact_2{
+		
+	}
+	.content_1{
+		height: 1250px;
+		
+	}
+	.content_2{
+		height: 1450px;
+	}
+	.content_3{
+		height: 1300px;
+	}
+	.work1, .work2, .work3, .work4, .work5, .work6{
+		width: 80%;
+		margin-top: 10px;
+	}
+	.block_skill{
+		margin-top: 20px;
+	}
+	.block_skill > span{
+		margin-top: 20px;
+	}
+	.content_5{
+		height: 400px;
+	}
+	.contact_2{
+		height: 500px;
+	}
+	.footer{
+		margin-top: 100px;
+	}
 }

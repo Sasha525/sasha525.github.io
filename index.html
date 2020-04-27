@@ -3,28 +3,30 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="utf-8">
-	<title></title>
+	<title>Portfolio</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="animate.min.css">
+   <link rel="shortcut icon" href="cms.png" type="image/x-icon">
+   <meta name="viewport" content="width-device-width, initial-scale=1">
 </head>
 <body>
 	<div class="container">
-		<aside class="aside">
+		<aside class="aside wow " id="home">
 			<div class="bg">
 				<div class="box2">
 					<span class="span_aside">Hello, my name is Sasha and I am</span>
 					<h2 class="h2_aside">INITIAL WEB DEVELOPER</h2>
 					<span class="span_aside2">creating modern and responsive websites</span>
-					<div class="button">
+					<a href="#aboutme"><div class="button">
 						<div class="chevron"></div>
 						<div class="chevron"></div>
 						<div class="chevron"></div>
 					  	<!-- <span class="text">Прокрутить вниз</span> -->
-	  				</div>
+	  				</div></a>
 				</div>
 			</div>
 		</aside>
@@ -32,17 +34,17 @@
 			<div class="box">
 				<img src="2.png" class="logo">
 				<div class="menu">
-					<a href="#"><span>HOME</span></a>
-					<a href="#"><span>ABOUT ME</span></a>
-					<a href="#"><span>WORKS</span></a>
-					<a href="#"><span>SKILLS</span></a>
-					<a href="#"><span>TESTIMONIALS</span></a>
-					<a href="#"><span>CONTACT</span></a>
+					<a href="#home"><span>HOME</span></a>
+					<a href="#aboutme"><span>ABOUT ME</span></a>
+					<a href="#works"><span>WORKS</span></a>
+					<a href="#skills"><span>SKILLS</span></a>
+					<a href="#vg"><span>TESTIMONIALS</span></a>
+					<a href="#contacts"><span>CONTACT</span></a>
 				</div>
 			</div>
 		</header>
 		<content>
-			<div class="content_1 wow fadeInUp">
+			<div class="content_1 wow fadeInUp" id="aboutme">
 				<div class="box3">
 					<div class="block_1">
 						<h2 class="aboutme">About me</h2>
@@ -63,48 +65,51 @@
 							<img class="b_img" src="tag.png">
 							<h2 class="b_h2">BRANDING</h2>
 						</div>
-						<div class="block wow fadeInRight">
+						<div class="block wow fadeInRight" data-wow-offset="500">
 							<img class="b_img" src="hr.png">
 							<h2 class="b_h2">CONSULTATION</h2>
 						</div>	
 					</div>
 				</div>
 			</div>
-			<div class="content_2">
+			<div class="content_2" id="works">
 				<div class="box4">
-					<h2 class="aboutme">My works</h2>
+					<h2 class="aboutme wow fadeInLeft">My works</h2>
 					<div class="straight"></div>
 					<span class="span">
-						Skoro byde</span>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						</span>
 					<div class="works">
 						<div class="works_block">
-							<div class="black">
-								<div class="work1">
-									<span>Десятепальцевий друк</span>
+							<!-- <div class="black"> -->
+								<div class="work1" onclick="dd()">
+									
+									<!-- <span>Десятепальцевий друк</span> -->
 								</div>
-							</div>
+							<!-- </div> -->
 							<div class="work2">
-								<span>SmartHouse</span>
+								<!-- <span>SmartHouse</span> -->
 							</div>
 							<div class="work3">
-								<span>Екологія</span>
+								<!-- <span>Екологія</span> -->
 							</div>
 						</div>
 						<div class="works_block">
 							<div class="work4">
-								<span>VR у бібліотеці</span>
+								<!-- <span>VR у бібліотеці</span> -->
 							</div>
 							<div class="work5">
-								<span>Моя родина</span>
+								<!-- <span>Моя родина</span> -->
 							</div>
 							<div class="work6">
-								<span>Сайт довідник для дітей з html/css</span>
+								 <!-- <span>Сайт довідник для дітей з html/css</span> -->
 							</div>						
 						</div>	
 					</div>
 				</div>
 			</div>
-			<div class="content_3">
+			<div class="content_3" id="skills">
 				<div class="box5">
 					<h2 class="aboutme">My skills</h2>
 					<div class="straight"></div>
@@ -117,7 +122,7 @@
 								<span class="count">85</span>
 								<span>%</span>
 							</div>
-							<span>HTML</span>
+							<span  class="sspan">HTML</span>
 						</div>
 						<div class="block_skill">
 							<div class="block23">
@@ -125,7 +130,7 @@
 								<span class="count">75</span>
 								<span>%</span>
 							</div>
-							<span>CSS</span>
+							<span class="sspan">CSS</span>
 						</div>
 						<div class="block_skill">
 							<div class="block24">
@@ -133,7 +138,7 @@
 								<span class="count">15</span>
 								<span>%</span>
 							</div>
-							<span>JavaScript</span>
+							<span class="sspan">JavaScript</span>
 						</div>
 						<div class="block_skill">
 							<div class="block25">
@@ -141,7 +146,7 @@
 								<span class="count">45</span>
 								<span>%</span>
 							</div>
-							<span>Design</span>
+							<span class="sspan">Design</span>
 						</div>
 
 
@@ -156,35 +161,45 @@
 					<button>HIRE ME</button>
 				</div>
 			</div>
-			<div class="content_5">
+			<div class="content_5" id="vg">
 				<div class="box7">
 					<h2 class="aboutme">What my clients say</h2>
 					<div class="straight"></div>
-					<span class="span">
+					<span>nothing</span>
+					<!-- <span class="span">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span> -->
+
 				</div>
+			<!-- 	<img src="what.jpg" style="width: 100vh; height: 200px; background-size: cover;"> -->
 			</div>
 		</content>
-		<div class="contacts">
-			<div class="box8">
-				<div class="contact_1">
-					<h2 class="aboutme">Contacts</h2>
-					<div class="straight"></div>
-					<span class="span">
-					You can contact me using your phone number or email address.</span>
-					<span class="span" style="text-align: center;"><br><b>Number:</b> +380931348773<br><b>Email:</b> SHKM.SashaMoskalenko@gmail.com</span>
+		<div class="contacts" id="contacts">
+			<div class="bgg">
+				<div class="imgbg">
+					<div class="box8">
+						<div class="contact_1">
+							<h2 class="aboutme">Contacts</h2>
+							<div class="straight"></div>
+							<span class="span">
+							You can contact me using your phone number or email address.</span>
+							<span class="span" style="text-align: center;"><br><b>Number:</b> +380931348773<br><b>Email:</b> SHKM.SashaMoskalenko@gmail.com</span>
+						</div>
+					</div>
 				</div>
+			</div>
+			<div class="box8">
 				<div class="contact_2">
+				
 					<h3 style="font-size: 17pt;">Drop me a line</h3>
 					<div class="straight"></div>
 					<span class="span">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco </span>
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco </span>
 					<input type="text" name="" placeholder="Name" class="input">
 					<input type="text" name="" placeholder="E-mail" class="input">
 					<input type="text" name="" placeholder="Message" class="input2">
@@ -192,8 +207,9 @@
 				</div>
 			</div>
 		</div>	
-		<footer class="footer">ШКМ @2020</footer>
+		
 	</div>
+	<footer class="footer">ШКМ</footer>
 	<script src="script.js"></script>
 	<script src="wow.min.js"></script>
 	<script>

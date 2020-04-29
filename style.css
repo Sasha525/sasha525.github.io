@@ -614,14 +614,14 @@
 		
 	}
 	.content_2{
-		height: 1650px;
+		height: 1850px;
 	}
 	.content_3{
 		height: 1300px;
 	}
 	.work1, .work2, .work3, .work4, .work5, .work6{
 		width: 80%;
-		margin-top: 10px;
+		margin-top: 70px;
 	}
 	.block_skill{
 		margin-top: 20px;
@@ -647,5 +647,8 @@
 	.contact_1{
 		justify-content: center;
 		align-items: center;
+	}
+	.works_block{
+		margin-top: 10px;
 	}
 }
